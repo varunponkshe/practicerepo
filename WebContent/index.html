@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+
+<script src="js/index.js"></script>
+
+</head>
+<body ng-app="my_app">
+<div>
+<div ng-controller="ctrl3">
+		<label >HELLO : <input type="text" ng-model="fname"></label>
+		<button ng-click="ading()">SAVE</button>
+		<br>
+		<br>
+		<select multiple style="width:100px">
+		<option ng-model="slt(x)"  ng-repeat="x in product" title="hello" style="width:80px">
+		{{x.name}}  
+		
+			</option>
+		</select><br>
+	<p>
+		{{vlue}}&nbsp;{{selected}}</p>
+				</div>
+	
+</div>
+</body>
+</html>
